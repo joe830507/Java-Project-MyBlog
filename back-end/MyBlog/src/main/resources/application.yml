@@ -1,0 +1,22 @@
+server:
+  port : 8081
+spring:
+  jpa:
+      generate-ddl : false
+      show-sql : true
+      properties : 
+        hibernate : 
+          dialect : org.hibernate.dialect.MySQL8Dialect
+      hibernate : 
+        ddl-auto : none
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/myblog?serverTimezone=UTC&autoReconnect=true
+    username : root
+    password : root
+logging:
+   level:
+    root : INFO
+    org.hibernate : INFO
+    org.hiberante.type.descriptor.sql.BasicBinder : TRACE
+    org.hibernate.type.descriptor.sql.BasicExtractor : TRACE
