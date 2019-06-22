@@ -25,7 +25,6 @@ public class MyBatisConfiguration {
 	public SqlSessionFactory sqlSessionFactory() throws Exception {
 		SqlSessionFactoryBean factoryBean = new SqlSessionFactoryBean();
 		factoryBean.setDataSource(dataSource());
-		factoryBean.getObject().getConfiguration().addMappers("com.lin.mapper");
 		factoryBean.getObject().getConfiguration().setMapUnderscoreToCamelCase(true);
 		return factoryBean.getObject();
 	}

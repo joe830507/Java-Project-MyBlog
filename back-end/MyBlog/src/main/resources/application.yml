@@ -20,3 +20,5 @@ logging:
     org.hibernate : INFO
     org.hiberante.type.descriptor.sql.BasicBinder : TRACE
     org.hibernate.type.descriptor.sql.BasicExtractor : TRACE
+randomDefaultStr : 9ae893ef-48af-42f1-a769-16326697b09e
+sessionTimeOut : 10800
